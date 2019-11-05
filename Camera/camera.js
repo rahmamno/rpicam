@@ -1,5 +1,5 @@
 var io = require('socket.io-client');
-var socket = io.connect('http://localhost:5000/camera');
+var socket = io.connect('https://rpicam.herokuapp.com');
 var fs = require('fs');
 var cam = require('raspicam');
 var c = new cam({ mode: "photo", output: "photo.jpg", w: 1920, h: 1080 });
