@@ -3,7 +3,7 @@
         <title>Take Remote Pictures!</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
         <script type="text/javascript">
-            var socket=io("http://localhost:5000/camera");
+            var socket=io("https://rpicam.herokuapp.com");
             var picture;
             function requestPicture(){
                 document.getElementById("image").style.display="none";
